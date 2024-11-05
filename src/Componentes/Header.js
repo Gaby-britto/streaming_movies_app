@@ -1,42 +1,36 @@
 import React from 'react'
 import { Image, StyleSheet, Text, View } from 'react-native'
-//import { Icon } from 'react-native-vector-icons/Icon';
+
+
+const imgUser = 'https://i.pinimg.com/564x/13/12/d2/1312d287e7de2dde6a6ccb8f4e3ddcd3.jpg';
+const imgSearch = 'https://i.pinimg.com/564x/59/9d/ad/599dade2bfab0c2b64db131a547ec1ba.jpg';
+const imgNotification = 'https://i.pinimg.com/564x/ca/3a/d8/ca3ad807aacfa006e9df2a76eb30dbb8.jpg';
 
 export default function Header() {
   return (
     <View style={styles.container}>
         <Image
          style={styles.imageUser}
-         source={{
-            uri: 'https://i.pinimg.com/564x/13/12/d2/1312d287e7de2dde6a6ccb8f4e3ddcd3.jpg'
-        }}
+         source={{uri: imgUser }}
         />
         <Text style={styles.nameUser}>Hi, Gaby Bea</Text>
         <Image
         style={styles.imageSeacrh}
-        source={{
-            uri: 'https://i.pinimg.com/564x/59/9d/ad/599dade2bfab0c2b64db131a547ec1ba.jpg'
-        }}
+        source={{uri: imgSearch}}
         />
         <Image
         style={styles.imageNotification}
-        source={{
-            uri: 'https://i.pinimg.com/564x/ca/3a/d8/ca3ad807aacfa006e9df2a76eb30dbb8.jpg'
-        }}
+        source={{uri: imgNotification}}
         />
-        {/* <Icon
-        name="ios-home" size={30} color="#4F8EF7"
-        /> */}
     </View>
   )
 }
 
 const styles = StyleSheet.create({
     container: {
-        marginTop: 50,
+        marginTop: 80,
         justifyContent: "flex-start",
         flexDirection: "row",
-        //flex: 2
     },
     imageUser: {
         width: 50,
